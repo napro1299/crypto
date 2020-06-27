@@ -5,17 +5,15 @@ import java.nio.ByteBuffer;
 public abstract class AbstractSource implements Source {
 
     protected ByteBuffer buf;
+    private boolean locked;
 
-    protected AbstractSource() {
+    AbstractSource() {
 
     }
 
     @Override
-    public void lock(boolean locked) {
-        if (locked)
-            this.buf.limit(0);
-        else
-            this.buf.limit(this.buf.position());
+    public void lock() {
+        this.locked = true;
     }
 
     @Override
@@ -26,5 +24,15 @@ public abstract class AbstractSource implements Source {
     @Override
     public int write() {
         return 0;
+    }
+
+    @Override
+    public void open() {
+        this.locked = false;
+    }
+
+    @Override
+    public boolean isOpen() {
+        return !this.locked;
     }
 }
