@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9d13e65-ad3f-44ce-b681-bb5b62113b33" name="Default Changelist" comment="" />
+    <list default="true" id="a9d13e65-ad3f-44ce-b681-bb5b62113b33" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/TransitoryChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/TransitoryChannel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/TransitoryInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/TransitoryInputStream.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +28,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1djnWFmEih1myKgpH9xkedzghh6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -71,65 +76,60 @@
       <option name="presentableId" value="Default" />
       <updated>1592947399324</updated>
     </task>
+    <task id="LOCAL-00001" summary="Source locking support">
+      <created>1593235874053</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593235874053</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Source locking support" />
+    <option name="LAST_COMMIT_MESSAGE" value="Source locking support" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="308" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1593204085240">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="308" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593204085240" />
-    <state x="299" y="407" width="408" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593037002544">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="299" y="407" width="408" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1593037002544" />
-    <state x="233" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593134042361">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="233" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593134042361" />
-    <state width="983" height="347" key="GridCell.Tab.0.bottom" timestamp="1593204653126">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="983" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593204653126" />
-    <state width="983" height="347" key="GridCell.Tab.0.center" timestamp="1593204653126">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="983" height="347" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593204653126" />
-    <state width="983" height="347" key="GridCell.Tab.0.left" timestamp="1593204653126">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="983" height="347" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593204653126" />
-    <state width="983" height="347" key="GridCell.Tab.0.right" timestamp="1593204653126">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="983" height="347" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593204653126" />
-    <state width="983" height="347" key="GridCell.Tab.1.bottom" timestamp="1593204653127">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="983" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593204653127" />
-    <state width="983" height="347" key="GridCell.Tab.1.center" timestamp="1593204653127">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="983" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593204653127" />
-    <state width="983" height="347" key="GridCell.Tab.1.left" timestamp="1593204653126">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="983" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593204653126" />
-    <state width="983" height="347" key="GridCell.Tab.1.right" timestamp="1593204653127">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="983" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593204653127" />
-    <state x="300" y="218" key="SettingsEditor" timestamp="1593198191920">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="300" y="218" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593198191920" />
-    <state x="202" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1593194767969">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="202" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593194767969" />
-    <state x="175" y="244" key="run.anything.popup" timestamp="1593196258038">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="175" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593196258038" />
+    <state x="308" y="231" key="#com.intellij.ide.util.MemberChooser" />
+    <state x="308" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" />
+    <state x="299" y="407" width="408" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" />
+    <state x="299" y="407" width="408" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" />
+    <state x="233" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" />
+    <state x="233" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" />
+    <state width="983" height="347" key="GridCell.Tab.0.bottom" />
+    <state width="983" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" />
+    <state width="983" height="347" key="GridCell.Tab.0.center" />
+    <state width="983" height="347" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" />
+    <state width="983" height="347" key="GridCell.Tab.0.left" />
+    <state width="983" height="347" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" />
+    <state width="983" height="347" key="GridCell.Tab.0.right" />
+    <state width="983" height="347" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" />
+    <state width="983" height="347" key="GridCell.Tab.1.bottom" />
+    <state width="983" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" />
+    <state width="983" height="347" key="GridCell.Tab.1.center" />
+    <state width="983" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" />
+    <state width="983" height="347" key="GridCell.Tab.1.left" />
+    <state width="983" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" />
+    <state width="983" height="347" key="GridCell.Tab.1.right" />
+    <state width="983" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" />
+    <state x="300" y="218" key="SettingsEditor" />
+    <state x="300" y="218" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" />
+    <state x="202" y="343" key="com.intellij.ide.util.TipDialog" />
+    <state x="202" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" />
+    <state x="175" y="244" key="run.anything.popup" />
+    <state x="175" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/encryption$StreamsExp.ic" NAME="StreamsExp Coverage Results" MODIFIED="1593198006916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

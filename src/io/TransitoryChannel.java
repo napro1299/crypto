@@ -17,12 +17,14 @@ public class TransitoryChannel extends AbstractInterruptibleChannel implements B
 
     @Override
     public int read(ByteBuffer byteBuffer) throws IOException {
+        this.ensureOpen();
         byteBuffer.put(this.buf);
         return byteBuffer.position();
     }
 
     @Override
     public int write(ByteBuffer byteBuffer) throws IOException {
+        this.ensureOpen();
         this.buf.put(byteBuffer);
         return byteBuffer.position();
     }

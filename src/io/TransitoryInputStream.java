@@ -13,10 +13,12 @@ public class TransitoryInputStream extends InputStream {
 
     public TransitoryInputStream(TransitorySource src) {
         this.src = src;
+        this.channel = new TransitoryChannel();
     }
 
     @Override
     public int read() throws IOException {
+        channel.read(src.buf);
         return 0;
     }
 
