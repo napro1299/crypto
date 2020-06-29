@@ -1,14 +1,13 @@
 package io;
 
+import java.io.IOException;
 import java.nio.ByteBuffer;
 
 public abstract class AbstractSource implements Source {
 
-    protected ByteBuffer buf;
     private boolean locked;
 
     AbstractSource() {
-
     }
 
     @Override
@@ -16,15 +15,9 @@ public abstract class AbstractSource implements Source {
         this.locked = true;
     }
 
-    @Override
-    public int read(TransitoryInputStream in) {
-        return 0;
-    }
+    public abstract int read() throws IOException;
 
-    @Override
-    public int write() {
-        return 0;
-    }
+    public abstract int write() throws IOException;
 
     @Override
     public void open() {

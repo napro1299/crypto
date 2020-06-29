@@ -1,10 +1,12 @@
 package io;
 
+import java.io.IOException;
+
 public interface Source {
 
-    int read(TransitoryInputStream in);
+    int read() throws IOException;
 
-    int write();
+    int write() throws IOException;
 
     void lock();
 

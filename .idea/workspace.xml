@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a9d13e65-ad3f-44ce-b681-bb5b62113b33" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/AbstractSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/AbstractSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/Source.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/Source.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/io/TransitoryChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/TransitoryChannel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/TransitoryInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/TransitoryInputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/TransitorySource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/TransitorySource.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +93,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

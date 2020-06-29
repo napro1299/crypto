@@ -10,23 +10,41 @@ import java.nio.channels.spi.AbstractInterruptibleChannel;
 
 public class TransitoryChannel extends AbstractInterruptibleChannel implements ByteChannel {
 
-    private ByteBuffer buf;
+    private TransitorySource src;
+    private boolean connected;
 
     public TransitoryChannel() {
     }
 
+    public TransitoryChannel(TransitorySource src) {
+        this.connect(src);
+    }
+
     @Override
     public int read(ByteBuffer byteBuffer) throws IOException {
-        this.ensureOpen();
-        byteBuffer.put(this.buf);
-        return byteBuffer.position();
+        if (this.isConnected() && this.src.isOpen()) {
+            byteBuffer.put(this.src.read());
+        } else {
+            throw new IllegalStateException("channel has no source");
+        }
     }
 
     @Override
     public int write(ByteBuffer byteBuffer) throws IOException {
-        this.ensureOpen();
-        this.buf.put(byteBuffer);
-        return byteBuffer.position();
+
+    }
+
+    public void connect(TransitorySource src) {
+        if (!connected) {
+            this.src = src;
+            this.connected = true;
+        } else {
+            throw new IllegalStateException("already connected");
+        }
+    }
+
+    public boolean isConnected() {
+        return this.connected;
     }
 
     @Override
