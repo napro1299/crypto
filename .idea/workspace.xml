@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9d13e65-ad3f-44ce-b681-bb5b62113b33" name="Default Changelist" comment="">
+    <list default="true" id="a9d13e65-ad3f-44ce-b681-bb5b62113b33" name="Default Changelist" comment=" new io handling - encryption processing now possible">
+      <change afterPath="$PROJECT_DIR$/src/crypto/CryptoBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/StreamBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/AbstractSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/AbstractSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/Source.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/Source.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/TransitoryChannel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/TransitoryChannel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/TransitorySource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/TransitorySource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryption/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryption/StreamsExp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/StreamsExp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryption/encrypt/BasicCrypto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryption/encrypt/Crypto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryption/io/FileIO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/io/FileIO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StreamsExp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/encrypt/BasicCrypto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/BasicCrypto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/encrypt/Crypto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/Crypto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/AbstractSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/Source.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/TransitoryChannel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/TransitoryInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/TransitoryOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/TransitorySource.java" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,19 +55,14 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Application">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Application" />
+      <module name="encryption" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StreamsExp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="StreamsExp" />
       <module name="encryption" />
@@ -63,9 +72,22 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Application" />
         <item itemvalue="Application.StreamsExp" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -103,37 +125,64 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Source locking support" />
-    <option name="LAST_COMMIT_MESSAGE" value="Source locking support" />
+    <MESSAGE value=" new io handling - encryption processing now possible" />
+    <option name="LAST_COMMIT_MESSAGE" value=" new io handling - encryption processing now possible" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="308" y="231" key="#com.intellij.ide.util.MemberChooser" />
-    <state x="308" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" />
-    <state x="299" y="407" width="408" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" />
-    <state x="299" y="407" width="408" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" />
-    <state x="233" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" />
-    <state x="233" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" />
-    <state width="983" height="347" key="GridCell.Tab.0.bottom" />
-    <state width="983" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" />
-    <state width="983" height="347" key="GridCell.Tab.0.center" />
-    <state width="983" height="347" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" />
-    <state width="983" height="347" key="GridCell.Tab.0.left" />
-    <state width="983" height="347" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" />
-    <state width="983" height="347" key="GridCell.Tab.0.right" />
-    <state width="983" height="347" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" />
-    <state width="983" height="347" key="GridCell.Tab.1.bottom" />
-    <state width="983" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" />
-    <state width="983" height="347" key="GridCell.Tab.1.center" />
-    <state width="983" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" />
-    <state width="983" height="347" key="GridCell.Tab.1.left" />
-    <state width="983" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" />
-    <state width="983" height="347" key="GridCell.Tab.1.right" />
-    <state width="983" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" />
-    <state x="300" y="218" key="SettingsEditor" />
-    <state x="300" y="218" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" />
-    <state x="202" y="343" key="com.intellij.ide.util.TipDialog" />
-    <state x="202" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" />
-    <state x="175" y="244" key="run.anything.popup" />
-    <state x="175" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" />
+    <state x="0" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593664827954">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593664827954" />
+    <state x="308" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1593663773016">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="308" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593663773016" />
+    <state x="369" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1593453824508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="369" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593453824508" />
+    <state x="299" y="407" width="408" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593453809306" />
+    <state x="299" y="407" width="408" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1593453809306" />
+    <state x="233" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593664348356">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="233" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593664348356" />
+    <state x="183" y="49" key="CommitChangelistDialog2" timestamp="1593664943045">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="183" y="49" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593664943045" />
+    <state width="989" height="148" key="GridCell.Tab.0.bottom" timestamp="1593664943064">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="989" height="148" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593664943064" />
+    <state width="989" height="148" key="GridCell.Tab.0.center" timestamp="1593664943064">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="989" height="148" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593664943064" />
+    <state width="989" height="148" key="GridCell.Tab.0.left" timestamp="1593664943064">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="989" height="148" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593664943064" />
+    <state width="989" height="148" key="GridCell.Tab.0.right" timestamp="1593664943064">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="989" height="148" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593664943064" />
+    <state width="983" height="347" key="GridCell.Tab.1.bottom" timestamp="1593453809306" />
+    <state width="983" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593453809306" />
+    <state width="983" height="347" key="GridCell.Tab.1.center" timestamp="1593453809306" />
+    <state width="983" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593453809306" />
+    <state width="983" height="347" key="GridCell.Tab.1.left" timestamp="1593453809306" />
+    <state width="983" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593453809306" />
+    <state width="983" height="347" key="GridCell.Tab.1.right" timestamp="1593453809306" />
+    <state width="983" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593453809306" />
+    <state x="300" y="218" key="SettingsEditor" timestamp="1593453809306" />
+    <state x="300" y="218" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593453809306" />
+    <state x="202" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1593563634193">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="202" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593563634193" />
+    <state x="175" y="244" key="run.anything.popup" timestamp="1593453809306" />
+    <state x="175" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593453809306" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/encryption$StreamsExp.ic" NAME="StreamsExp Coverage Results" MODIFIED="1593198006916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

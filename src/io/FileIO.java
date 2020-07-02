@@ -6,14 +6,6 @@ import java.nio.channels.FileChannel;
 
 public final class FileIO {
 
-    public static void iotest(File file, ByteBuffer srcBuf, TransitoryChannel channel) throws IOException {
-        try (FileChannel source = new FileInputStream(file).getChannel()) {
-            source.read(srcBuf);
-        } finally {
-            srcBuf.flip();
-        }
-    }
-
     public static void readToByteBuffer(File file, ByteBuffer byteBuffer) throws IOException {
         if (byteBuffer == null) {
             throw new NullPointerException("buffer not allocated");
