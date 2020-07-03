@@ -9,12 +9,18 @@ public class BasicCrypto extends CryptoBase {
 
     @Override
     public byte encrypt(byte b) {
-        return (byte) (b + 1);
+        if ((b % 2) == 1)
+            return (byte) (b - 1);
+        else
+            return (byte) (b + 1);
     }
 
     @Override
     public byte decrypt(byte b) {
-        return 0;
+        if ((b % 2) == 1)
+            return (byte) (b + 1);
+        else
+            return (byte) (b - 1);
     }
 
 }

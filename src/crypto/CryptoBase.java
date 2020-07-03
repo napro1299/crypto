@@ -12,4 +12,9 @@ public abstract class CryptoBase extends StreamBase implements Crypto {
     public byte encryptData(byte b) {
         return this.encrypt(b);
     }
+
+    @Override
+    public byte decryptData(byte b) {
+        return this.decrypt(b);
+    }
 }
