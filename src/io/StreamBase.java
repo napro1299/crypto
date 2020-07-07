@@ -23,6 +23,7 @@ public abstract class StreamBase {
             out.write(enc);
             dec.write(this.decryptData(enc));
         }
+
         in.close();
         out.close();
         dec.close();
