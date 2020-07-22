@@ -1,9 +1,6 @@
-import crypto.Crypto;
-import crypto.BasicCrypto;
 import crypto.VigenereCrypto;
 
 import java.io.IOException;
-import java.util.Random;
 
 public class Application {
 

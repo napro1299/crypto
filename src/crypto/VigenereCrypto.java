@@ -2,6 +2,10 @@ package crypto;
 
 import java.util.Random;
 
+/**
+ * The Vigenere stream cipher generates a random key which gets added
+ * to the plaintext data that gets passed in
+ */
 public class VigenereCrypto extends CryptoBase {
 
     private Random random;
@@ -41,8 +45,8 @@ public class VigenereCrypto extends CryptoBase {
             this.mode = Mode.ENCRYPT;
         }
 
-        int result = b + key[pointer];
-        pointer++;
+        int result = b + key[this.pointer];
+        this.pointer++;
         return (byte) result;
     }
 
@@ -53,19 +57,23 @@ public class VigenereCrypto extends CryptoBase {
             this.mode = Mode.DECRYPT;
         }
 
-        int result = b - key[pointer];
-        pointer++;
+        int result = b - key[this.pointer];
+        this.pointer++;
         return (byte) result;
     }
 
-    public void generateKeys() {
+    private void generateKeys() {
         int keyVal;
         for (int i = 0; i < KEY_LENGTH; i++) {
             keyVal = this.random.nextInt(KEY_BOUND);
-            key[i] = keyVal < (keyVal / 2) ? keyVal - (keyVal / 2) : (keyVal / 2);
+            key[i] = keyVal < (KEY_BOUND / 2) ? keyVal - (KEY_BOUND / 2) : (keyVal / 2);
         }
         // TODO: Temp
         for (int value : key) System.out.print(value + " ");
+    }
+
+    public long getSeed() {
+        return this.seed;
     }
 
     enum Mode {
