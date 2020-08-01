@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="a9d13e65-ad3f-44ce-b681-bb5b62113b33" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
     <list default="true" id="a9d13e65-ad3f-44ce-b681-bb5b62113b33" name="Default Changelist" comment=" new io handling - encryption processing now possible">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crypto/Algorithms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crypto/CipherBlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crypto/CipherGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crypto/CipherStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/crypto/Group.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/io/StreamManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/dec.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/end.txt" beforeDir="false" afterPath="$PROJECT_DIR$/end.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryption/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryption/META-INF/encryption.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryption/crypto/BasicCrypto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/crypto/BasicCrypto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryption/crypto/VigenereCrypto$Mode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/crypto/VigenereCrypto$Mode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryption/crypto/VigenereCrypto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/crypto/VigenereCrypto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sample.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crypto/CryptoBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/CryptoBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crypto/VigenereCrypto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/VigenereCrypto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/io/StreamBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/StreamBase.java" afterDir="false" />
->>>>>>> c8ffc4786ec366b13095b39446503274817d1443
+      <change beforePath="$PROJECT_DIR$/out/production/encryption/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryption/crypto/BasicCrypto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryption/crypto/Crypto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/crypto/Crypto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryption/crypto/CryptoBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryption/crypto/VigenereCrypto$Mode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryption/crypto/VigenereCrypto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryption/io/FileIO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryption/io/StreamBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/io/StreamBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crypto/BasicCrypto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/algorithms/BasicCrypto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crypto/Crypto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/Crypto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crypto/CryptoBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crypto/VigenereCrypto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/algorithms/VigenereCrypto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/FileIO.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +37,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -67,9 +70,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Application">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Application" />
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="encryption" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -82,9 +85,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.Test" />
+      <module name="encryption" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.StreamsExp" />
       </list>
     </recent_temporary>
@@ -114,21 +131,7 @@
       <option name="project" value="LOCAL" />
       <updated>1593664978151</updated>
     </task>
-    <task id="LOCAL-00003" summary="vigenere algorithm with decryption supported">
-      <created>1593799772667</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1593799772667</updated>
-    </task>
-    <task id="LOCAL-00004" summary="comment changes">
-      <created>1593799893521</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1593799893521</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -147,9 +150,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Source locking support" />
     <MESSAGE value=" new io handling - encryption processing now possible" />
-    <MESSAGE value="vigenere algorithm with decryption supported" />
-    <MESSAGE value="comment changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="comment changes" />
+    <option name="LAST_COMMIT_MESSAGE" value=" new io handling - encryption processing now possible" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593664827954">
@@ -170,26 +171,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="233" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593664348356" />
-    <state x="183" y="49" key="CommitChangelistDialog2" timestamp="1595381115579">
+    <state x="183" y="49" key="CommitChangelistDialog2" timestamp="1593799771815">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="183" y="49" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1595381115579" />
-    <state width="989" height="147" key="GridCell.Tab.0.bottom" timestamp="1593799933747">
+    <state x="183" y="49" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593799771815" />
+    <state width="989" height="147" key="GridCell.Tab.0.bottom" timestamp="1593799731472">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="989" height="147" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593799933747" />
-    <state width="989" height="147" key="GridCell.Tab.0.center" timestamp="1593799933747">
+    <state width="989" height="147" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593799731472" />
+    <state width="989" height="147" key="GridCell.Tab.0.center" timestamp="1593799731472">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="989" height="147" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593799933747" />
-    <state width="989" height="147" key="GridCell.Tab.0.left" timestamp="1593799933747">
+    <state width="989" height="147" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593799731472" />
+    <state width="989" height="147" key="GridCell.Tab.0.left" timestamp="1593799731472">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="989" height="147" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593799933747" />
-    <state width="989" height="147" key="GridCell.Tab.0.right" timestamp="1593799933747">
+    <state width="989" height="147" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593799731472" />
+    <state width="989" height="147" key="GridCell.Tab.0.right" timestamp="1593799731472">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="989" height="147" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593799933747" />
+    <state width="989" height="147" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593799731472" />
     <state width="983" height="347" key="GridCell.Tab.1.bottom" timestamp="1593453809306" />
     <state width="983" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593453809306" />
     <state width="983" height="347" key="GridCell.Tab.1.center" timestamp="1593453809306" />
@@ -204,14 +205,10 @@
     <state x="315" y="234" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593747233603" />
     <state x="300" y="218" key="SettingsEditor" timestamp="1593453809306" />
     <state x="300" y="218" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593453809306" />
-    <state x="202" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1594753274489">
+    <state x="202" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1593791563349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="202" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594753274489" />
-    <state x="0" y="140" key="new project wizard" timestamp="1594150123653">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="0" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1594150123653" />
+    <state x="202" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593791563349" />
     <state x="175" y="244" key="run.anything.popup" timestamp="1593453809306" />
     <state x="175" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593453809306" />
   </component>

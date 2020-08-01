@@ -1,4 +1,6 @@
-package crypto;
+package crypto.algorithms;
+
+import crypto.CipherStream;
 
 import java.util.Random;
 
@@ -6,7 +8,7 @@ import java.util.Random;
  * The Vigenere stream cipher generates a random key which gets added
  * to the plaintext data that gets passed in
  */
-public class VigenereCrypto extends CryptoBase {
+public class VigenereCrypto implements CipherStream {
 
     private Random random;
     private long seed;

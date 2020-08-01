@@ -1,10 +1,12 @@
-package crypto;
+package crypto.algorithms;
+
+import crypto.CipherStream;
 
 /**
  * Shifts a byte by 1 or -1 depending on if the index
  * is even or odd
  */
-public class BasicCrypto extends CryptoBase {
+public class BasicCrypto implements CipherStream {
 
     @Override
     public byte encrypt(byte b) {
