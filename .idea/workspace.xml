@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9d13e65-ad3f-44ce-b681-bb5b62113b33" name="Default Changelist" comment=" new io handling - encryption processing now possible">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a9d13e65-ad3f-44ce-b681-bb5b62113b33" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/crypto/Algorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/Algorithms.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/crypto/CipherGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/CipherGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crypto/algorithms/VigenereCrypto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/algorithms/VigenereCrypto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593664978151</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="structure changes - update">
+      <created>1596344332091</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596344332091</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,7 +142,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Source locking support" />
     <MESSAGE value=" new io handling - encryption processing now possible" />
-    <option name="LAST_COMMIT_MESSAGE" value=" new io handling - encryption processing now possible" />
+    <MESSAGE value="structure changes - update" />
+    <option name="LAST_COMMIT_MESSAGE" value="structure changes - update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593664827954">
@@ -146,9 +154,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="435" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1596341434780" />
-    <state x="308" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1593728234256">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="219" y="146" key="#com.intellij.ide.util.MemberChooser" timestamp="1596393567913">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="219" y="146" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1596393567913" />
     <state x="308" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593728234256" />
     <state x="369" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1593453824508">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -160,9 +169,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="233" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593664348356" />
-    <state x="183" y="49" key="CommitChangelistDialog2" timestamp="1593799771815">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="130" y="0" key="CommitChangelistDialog2" timestamp="1596344330428">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="130" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1596344330428" />
     <state x="183" y="49" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593799771815" />
     <state width="989" height="147" key="GridCell.Tab.0.bottom" timestamp="1593799731472">
       <screen x="0" y="0" width="1920" height="1040" />

@@ -18,7 +18,7 @@ public class CipherGroup<T extends Crypto> implements Group {
 
     public CipherGroup(Algorithms... algorithms) {
         for (Algorithms algorithm : algorithms) {
-            cryptoGroup.add((T) algorithm.createCipher());
+            cryptoGroup.add();
         }
     }
 
