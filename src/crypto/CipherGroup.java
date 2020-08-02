@@ -16,6 +16,12 @@ public class CipherGroup<T extends Crypto> implements Group {
         cryptoGroup.addAll(Arrays.asList(t));
     }
 
+    public CipherGroup(Algorithms... algorithms) {
+        for (Algorithms algorithm : algorithms) {
+            cryptoGroup.add((T) algorithm.createCipher());
+        }
+    }
+
     @Override
     public void encryptAll() {
         if (t instanceof CipherStream) {
