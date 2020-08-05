@@ -13,7 +13,7 @@ public class StreamManager {
     private BufferedInputStream inStream;
     private BufferedOutputStream outStream;
     private boolean linkedFilesChanged;
-    public static final int DEFAULT_BLOCK_SIZE = 20;
+    public static final int DEFAULT_BLOCK_SIZE = 1024;
     public static final int MAX_BLOCK_SIZE = 2147483639;
 
     public StreamManager(File in, File out, Group group) {
@@ -36,6 +36,7 @@ public class StreamManager {
 
     public StreamManager executeGroup() {
         this.executeGroup(false);
+
         return this;
     }
 
@@ -60,20 +61,23 @@ public class StreamManager {
                 buffer = new byte[this.blockSize];
             }
 
-            int off = -1;
+            int off = 0;
             int b;
 
-            while (inStream.available() != 0) {
-                off++;
-                if (off > buffer.length) {
-                    outStream.write(this.group.encryptAllBlocks(buffer));
-                    off = 0;
+            while ((b = inStream.read()) != -1) {
+
+                if (off > buffer.length - 1) {
+                    if (decrypt)
+                        outStream.write(this.group.encryptAllBlocks(buffer));
+                    else
+                        outStream.write(this.group.decryptAllBlocks(buffer));
+                    off = 1;
+                    buffer = new byte[buffer.length];
                 }
                 else
                     off++;
 
-                b = inStream.read();
-                buffer[off] = (byte) b;
+                buffer[off - 1] = (byte) b;
             }
 
             outStream.close();
@@ -87,19 +91,20 @@ public class StreamManager {
         this.ensureCorrectStreams();
 
         try {
-            int data;
+            int b;
             int encrypted;
             int size = inStream.available();
-            while ((data = inStream.read()) != -1) {
+            while ((b = inStream.read()) != -1) {
                 if (decrypt)
-                    encrypted = this.group.decryptAllStreams((byte) data);
+                    encrypted = this.group.decryptAllStreams((byte) b);
                 else
-                    encrypted = this.group.encryptAllStreams((byte) data);
+                    encrypted = this.group.encryptAllStreams((byte) b);
 
                 outStream.write(encrypted);
-                System.out.print((char) encrypted);
+                //System.out.print((char) encrypted);
                 //this.displayProgress(0, size);
             }
+            System.out.println();
 
             outStream.close();
             inStream.close();
@@ -120,9 +125,11 @@ public class StreamManager {
     }
 
     private void displayProgress(int pos, int total) {
-        int changeMark = total / 15;
-        for (int i = 0; i < 15; i++) {
-            System.out.println();
+        int lengthOfBar = 20;
+        int changeMark = total / lengthOfBar;
+        System.out.println("Progress: ");
+        for (int i = 0; i < lengthOfBar; i++) {
+            System.out.print("█\r");
         }
     }
 
@@ -142,8 +149,8 @@ public class StreamManager {
         if (this.in != null && this.out != null) {
             File in = this.in;
             File out = this.out;
-            this.in = out;
-            this.out = in;
+            this.in = this.out;
+            this.out = this.in;
             this.linkedFilesChanged = true;
         } else {
             throw new NullPointerException("in and out files are null");

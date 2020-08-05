@@ -19,9 +19,9 @@ public class BasicCrypto implements CipherStream {
     @Override
     public byte decrypt(byte b) {
         if ((b % 2) == 1)
-            return (byte) (b + 1);
-        else
             return (byte) (b - 1);
+        else
+            return (byte) (b + 1);
     }
 
 }

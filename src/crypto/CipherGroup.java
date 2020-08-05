@@ -1,5 +1,7 @@
 package crypto;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -7,7 +9,7 @@ import java.util.List;
 public class CipherGroup<T extends Crypto> implements Group {
 
     private final boolean isBlock;
-    private final List<T> cryptoGroup = new LinkedList<T>();
+    private final List<T> cryptoGroup = new ArrayList<T>();
     private int length;
 
     public CipherGroup(T... t) {
@@ -71,6 +73,8 @@ public class CipherGroup<T extends Crypto> implements Group {
     public byte[] decryptAllBlocks(byte[] bb) {
         byte[] tempBlock = new byte[bb.length];
         boolean first = true;
+        ArrayList<Crypto> tempList = this.reverseList();
+
         for (T elem : cryptoGroup) {
             CipherBlock cs = (CipherBlock) elem;
             if (first) {
@@ -88,7 +92,9 @@ public class CipherGroup<T extends Crypto> implements Group {
     public byte decryptAllStreams(byte b) {
         byte tempByte = 0;
         boolean first = true;
-        for (T elem : cryptoGroup) {
+        ArrayList<Crypto> tempList = this.reverseList();
+
+        for (Crypto elem : tempList) {
             CipherStream cs = (CipherStream) elem;
             if (first) {
                 tempByte = cs.decrypt(b);
@@ -99,6 +105,15 @@ public class CipherGroup<T extends Crypto> implements Group {
         }
 
         return tempByte;
+    }
+
+    private ArrayList<Crypto> reverseList() {
+        ArrayList<Crypto> tempList = new ArrayList<>();
+        for (int i = cryptoGroup.size() - 1; i != -1; --i) {
+            tempList.add(cryptoGroup.get(i));
+        }
+
+        return tempList;
     }
 
     @Override

@@ -1,7 +1,7 @@
 package crypto;
 
 public interface CipherBlock extends Crypto {
-    byte[] encrypt(byte[] b);
+    byte[] encrypt(byte[] bb);
 
-    byte[] decrypt(byte[] b);
+    byte[] decrypt(byte[] bb);
 }

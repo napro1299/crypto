@@ -10,12 +10,12 @@ import crypto.CipherBlock;
 public class BasicBlockCrypto implements CipherBlock {
 
     @Override
-    public byte[] encrypt(byte[] b) {
+    public byte[] encrypt(byte[] bb) {
         return new byte[0];
     }
 
     @Override
-    public byte[] decrypt(byte[] b) {
+    public byte[] decrypt(byte[] bb) {
         return new byte[0];
     }
 }

@@ -1,16 +1,18 @@
 package crypto;
 
-import crypto.algorithms.BasicCrypto;
-import crypto.algorithms.BlankCrypto;
-import crypto.algorithms.VigenereCrypto;
+import crypto.algorithms.*;
 
 import java.lang.reflect.InvocationTargetException;
 
 public enum Algorithms {
 
-    VIGENERE(false, VigenereCrypto.class),
-    BASIC(false, BasicCrypto.class),
-    BLANK(false, BlankCrypto.class);
+    VIGENERESTREAM(false, VigenereCrypto.class),
+    BASICSTREAM(false, BasicCrypto.class),
+    BLANKSTREAM(false, BlankStreamCrypto.class),
+    VIGENEREBLOCK(true, MatrixVigenereCrypto.class),
+    BASICBLOCK(true, BasicBlockCrypto.class),
+    BLANKBLOCK(true, BlankBlockCrypto.class),
+    ALWAYSADDONE(false, AlwaysAddOne.class);
 
     private boolean isBlock;
     private Class<?> clazz;
