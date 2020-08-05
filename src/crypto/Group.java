@@ -1,7 +1,17 @@
 package crypto;
 
 public interface Group {
-    void encryptAll();
+    byte encryptAllStreams(byte b);
 
-    void decryptAll();
+    byte[] encryptAllBlocks(byte[] bb);
+
+    byte decryptAllStreams(byte b);
+
+    byte[] decryptAllBlocks(byte[] bb);
+
+    boolean isBlock();
+
+    void finished();
+
+    int length();
 }

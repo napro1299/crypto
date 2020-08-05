@@ -3,9 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a9d13e65-ad3f-44ce-b681-bb5b62113b33" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryption/io/StreamBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/crypto/Algorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/Algorithms.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/crypto/CipherGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/CipherGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/crypto/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/Group.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/crypto/algorithms/VigenereCrypto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/algorithms/VigenereCrypto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/StreamBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/io/StreamManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/StreamManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +43,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="encryption" />
@@ -73,8 +78,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.StreamsExp" />
       </list>
     </recent_temporary>
@@ -154,42 +159,46 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="435" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1596341434780" />
-    <state x="219" y="146" key="#com.intellij.ide.util.MemberChooser" timestamp="1596393567913">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="935" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1596492916385">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="219" y="146" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1596393567913" />
-    <state x="308" y="231" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1593728234256" />
+    <state x="935" y="205" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596492916385" />
     <state x="369" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1593453824508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="369" y="408" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593453824508" />
     <state x="299" y="407" width="408" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1593453809306" />
     <state x="299" y="407" width="408" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1593453809306" />
-    <state x="233" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593664348356">
+    <state x="233" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596493504464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="233" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593664348356" />
+    <state x="233" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596493504464" />
     <state x="130" y="0" key="CommitChangelistDialog2" timestamp="1596344330428">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="130" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1596344330428" />
     <state x="183" y="49" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1593799771815" />
-    <state width="989" height="147" key="GridCell.Tab.0.bottom" timestamp="1593799731472">
+    <state x="526" y="355" key="FileChooserDialogImpl" timestamp="1596478551877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="989" height="147" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593799731472" />
-    <state width="989" height="147" key="GridCell.Tab.0.center" timestamp="1593799731472">
+    <state x="526" y="355" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596478551877" />
+    <state width="1877" height="147" key="GridCell.Tab.0.bottom" timestamp="1596556610777">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="989" height="147" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1593799731472" />
-    <state width="989" height="147" key="GridCell.Tab.0.left" timestamp="1593799731472">
+    <state width="1877" height="147" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596556610777" />
+    <state width="1877" height="147" key="GridCell.Tab.0.center" timestamp="1596556610777">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="989" height="147" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1593799731472" />
-    <state width="989" height="147" key="GridCell.Tab.0.right" timestamp="1593799731472">
+    <state width="1877" height="147" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596556610777" />
+    <state width="1877" height="147" key="GridCell.Tab.0.left" timestamp="1596556610777">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="989" height="147" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1593799731472" />
+    <state width="1877" height="147" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596556610777" />
+    <state width="1877" height="147" key="GridCell.Tab.0.right" timestamp="1596556610777">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="147" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596556610777" />
     <state width="983" height="347" key="GridCell.Tab.1.bottom" timestamp="1593453809306" />
     <state width="983" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1593453809306" />
     <state width="983" height="347" key="GridCell.Tab.1.center" timestamp="1593453809306" />
@@ -202,21 +211,31 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="315" y="234" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593747233603" />
-    <state x="300" y="0" key="SettingsEditor" timestamp="1596340787247">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="300" y="188" key="SettingsEditor" timestamp="1596478568148">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="300" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596340787247" />
-    <state x="300" y="218" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1593453809306" />
+    <state x="300" y="188" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596478568148" />
     <state x="202" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1593791563349">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="202" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593791563349" />
+    <state x="656" y="260" width="607" height="526" key="find.popup" timestamp="1596504780855">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="260" width="607" height="526" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596504780855" />
     <state x="425" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1596343342046">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="425" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1596343342046" />
-    <state x="175" y="244" key="run.anything.popup" timestamp="1593453809306" />
-    <state x="175" y="244" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1593453809306" />
+    <state x="175" y="244" width="672" height="677" key="run.anything.popup" timestamp="1596510170452">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="175" y="244" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596510170452" />
+    <state x="623" y="230" key="search.everywhere.popup" timestamp="1596504786371">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="230" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1596504786371" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/encryption$StreamsExp.ic" NAME="StreamsExp Coverage Results" MODIFIED="1593198006916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -1,7 +1,6 @@
 package crypto.algorithms;
 
 import crypto.CipherStream;
-import crypto.Crypto;
 
 import java.util.Random;
 
