@@ -70,8 +70,6 @@ public class VigenereCrypto implements CipherStream {
             keyVal = this.random.nextInt(KEY_BOUND);
             key[i] = keyVal < (KEY_BOUND / 2) ? keyVal - (KEY_BOUND / 2) : (keyVal / 2);
         }
-        // TODO: Temp
-        for (int value : key) System.out.print(value + " ");
     }
 
     public long getSeed() {

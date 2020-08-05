@@ -35,16 +35,21 @@ public class StreamManager {
     }
 
     public StreamManager executeGroup() {
+        this.executeGroup(false);
+        return this;
+    }
+
+    public StreamManager executeGroup(boolean decrypt) {
         if (group.isBlock()) {
-            executeBlockGroup();
+            executeBlockGroup(decrypt);
         } else {
-            executeStreamGroup();
+            executeStreamGroup(decrypt);
         }
 
         return this;
     }
 
-    private void executeBlockGroup() {
+    private void executeBlockGroup(boolean decrypt) {
         this.ensureCorrectStreams();
 
         try {
@@ -66,27 +71,37 @@ public class StreamManager {
                 }
                 else
                     off++;
+
                 b = inStream.read();
                 buffer[off] = (byte) b;
             }
 
+            outStream.close();
             inStream.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    private void executeStreamGroup() {
+    private void executeStreamGroup(boolean decrypt) {
         this.ensureCorrectStreams();
 
         try {
-            for (int i = 0; i < this.group.length(); i++) {
-                while (inStream.available() != 0) {
-                    outStream.write(this.group.encryptAllStreams((byte) inStream.read()));
-                }
-                this.group.finished();
+            int data;
+            int encrypted;
+            int size = inStream.available();
+            while ((data = inStream.read()) != -1) {
+                if (decrypt)
+                    encrypted = this.group.decryptAllStreams((byte) data);
+                else
+                    encrypted = this.group.encryptAllStreams((byte) data);
+
+                outStream.write(encrypted);
+                System.out.print((char) encrypted);
+                //this.displayProgress(0, size);
             }
 
+            outStream.close();
             inStream.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -104,6 +119,13 @@ public class StreamManager {
         }
     }
 
+    private void displayProgress(int pos, int total) {
+        int changeMark = total / 15;
+        for (int i = 0; i < 15; i++) {
+            System.out.println();
+        }
+    }
+
     public StreamManager changeIn(File in) {
         this.in = in;
         this.linkedFilesChanged = true;
@@ -118,6 +140,8 @@ public class StreamManager {
 
     public StreamManager swap() {
         if (this.in != null && this.out != null) {
+            File in = this.in;
+            File out = this.out;
             this.in = out;
             this.out = in;
             this.linkedFilesChanged = true;

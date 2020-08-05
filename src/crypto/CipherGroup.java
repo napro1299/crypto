@@ -9,7 +9,6 @@ public class CipherGroup<T extends Crypto> implements Group {
     private final boolean isBlock;
     private final List<T> cryptoGroup = new LinkedList<T>();
     private int length;
-    private int listIndex = 0;
 
     public CipherGroup(T... t) {
         this.filterElements(t);
@@ -36,28 +35,70 @@ public class CipherGroup<T extends Crypto> implements Group {
 
     @Override
     public byte[] encryptAllBlocks(byte[] bb) {
-        return new byte[3];
+        byte[] tempBlock = new byte[bb.length];
+        boolean first = true;
+        for (T elem : cryptoGroup) {
+            CipherBlock cs = (CipherBlock) elem;
+            if (first) {
+                tempBlock = cs.encrypt(bb);
+                first = false;
+            } else {
+                tempBlock = cs.encrypt(tempBlock);
+            }
+        }
+
+        return tempBlock;
     }
 
     @Override
     public byte encryptAllStreams(byte b) {
-        CipherStream cs = (CipherStream) this.cryptoGroup.get(listIndex);
-        return cs.encrypt(b);
+        byte tempByte = 0;
+        boolean first = true;
+        for (T elem : cryptoGroup) {
+            CipherStream cs = (CipherStream) elem;
+            if (first) {
+                tempByte = cs.encrypt(b);
+                first = false;
+            } else {
+                tempByte = cs.encrypt(tempByte);
+            }
+        }
+
+        return tempByte;
     }
 
     @Override
     public byte[] decryptAllBlocks(byte[] bb) {
-        return new byte[3];
+        byte[] tempBlock = new byte[bb.length];
+        boolean first = true;
+        for (T elem : cryptoGroup) {
+            CipherBlock cs = (CipherBlock) elem;
+            if (first) {
+                tempBlock = cs.decrypt(bb);
+                first = false;
+            } else {
+                tempBlock = cs.decrypt(tempBlock);
+            }
+        }
+
+        return tempBlock;
     }
 
     @Override
     public byte decryptAllStreams(byte b) {
-        return 0;
-    }
+        byte tempByte = 0;
+        boolean first = true;
+        for (T elem : cryptoGroup) {
+            CipherStream cs = (CipherStream) elem;
+            if (first) {
+                tempByte = cs.decrypt(b);
+                first = false;
+            } else {
+                tempByte = cs.decrypt(tempByte);
+            }
+        }
 
-    @Override
-    public void finished() {
-        this.listIndex++;
+        return tempByte;
     }
 
     @Override

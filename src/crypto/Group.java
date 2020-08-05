@@ -11,7 +11,5 @@ public interface Group {
 
     boolean isBlock();
 
-    void finished();
-
     int length();
 }

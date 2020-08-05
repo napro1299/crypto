@@ -1,6 +1,7 @@
 package crypto;
 
 import crypto.algorithms.BasicCrypto;
+import crypto.algorithms.BlankCrypto;
 import crypto.algorithms.VigenereCrypto;
 
 import java.lang.reflect.InvocationTargetException;
@@ -8,7 +9,8 @@ import java.lang.reflect.InvocationTargetException;
 public enum Algorithms {
 
     VIGENERE(false, VigenereCrypto.class),
-    BASIC(false, BasicCrypto.class);
+    BASIC(false, BasicCrypto.class),
+    BLANK(false, BlankCrypto.class);
 
     private boolean isBlock;
     private Class<?> clazz;
