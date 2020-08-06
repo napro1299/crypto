@@ -1,6 +1,7 @@
 package io;
 
 import crypto.Group;
+import me.tongfei.progressbar.ProgressBar;
 
 import java.io.*;
 
@@ -99,8 +100,6 @@ public class StreamManager {
                     encrypted = this.group.encryptAllStreams((byte) b);
 
                 outStream.write(encrypted);
-                //System.out.print((char) encrypted);
-                //this.displayProgress(0, size);
             }
             System.out.println();
 
@@ -119,6 +118,12 @@ public class StreamManager {
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    private void progressBar(int n) {
+        try (ProgressBar pb = new ProgressBar("Encrypt", 100)) {
+            pb.stepBy(n);
         }
     }
 

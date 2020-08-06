@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="e23b2ba0-4e1e-453f-bd9e-5e9cb62cac87" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
@@ -15,11 +16,23 @@
       <change beforePath="$PROJECT_DIR$/decrypted.txt" beforeDir="false" afterPath="$PROJECT_DIR$/decrypted.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/encrypted.txt" beforeDir="false" afterPath="$PROJECT_DIR$/encrypted.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/encryption/META-INF/encryption.kotlin_module" beforeDir="false" />
+=======
+    <list default="true" id="a9d13e65-ad3f-44ce-b681-bb5b62113b33" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/decrypted.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/encrypted.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unknown.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/decrypted.txt" beforeDir="false" afterPath="$PROJECT_DIR$/decrypted.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/encrypted.txt" beforeDir="false" afterPath="$PROJECT_DIR$/encrypted.txt" afterDir="false" />
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/out/production/encryption/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/encryption/io/StreamManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/io/StreamManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plaintext.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plaintext.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/src/io/StreamManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/StreamManager.java" afterDir="false" />
+=======
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +54,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1djnWFmEih1myKgpH9xkedzghh6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -164,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596644688098</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="new updates finalized - fixed decryption pipeline error">
+      <created>1596663800159</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596663800160</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -216,15 +237,16 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="233" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596493504464" />
-    <state x="183" y="49" key="CommitChangelistDialog2" timestamp="1596663767364">
+    <state x="183" y="49" key="CommitChangelistDialog2" timestamp="1596663799187">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="130" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1596344330428" />
-    <state x="183" y="49" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1596663767364" />
+    <state x="183" y="49" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1596663799187" />
     <state x="526" y="355" key="FileChooserDialogImpl" timestamp="1596478551877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="526" y="355" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596478551877" />
+<<<<<<< Updated upstream
     <state width="1323" height="125" key="GridCell.Tab.0.bottom" timestamp="1596679553163">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -261,6 +283,24 @@
     <state width="1323" height="139" key="GridCell.Tab.0.right.inPresentationMode/0.0.1366.728@0.0.1366.728" timestamp="1596666144296" />
     <state width="1323" height="125" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596679553163" />
     <state width="1877" height="147" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596663729908" />
+=======
+    <state width="1877" height="147" key="GridCell.Tab.0.bottom" timestamp="1596664496150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="147" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596664496150" />
+    <state width="1877" height="147" key="GridCell.Tab.0.center" timestamp="1596664496150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="147" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596664496150" />
+    <state width="1877" height="147" key="GridCell.Tab.0.left" timestamp="1596664496150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="147" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596664496150" />
+    <state width="1877" height="147" key="GridCell.Tab.0.right" timestamp="1596664496150">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="147" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596664496150" />
+>>>>>>> Stashed changes
     <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1596663026866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -334,15 +374,25 @@
     </state>
     <state x="300" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596340787247" />
     <state x="300" y="188" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596478568148" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1596644701786">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1596663829622">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+<<<<<<< Updated upstream
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596644701786" />
     <state x="144" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1596679599198">
       <screen x="0" y="0" width="1366" height="728" />
+=======
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596663829622" />
+    <state x="202" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1596642711153">
+      <screen x="0" y="0" width="1920" height="1040" />
+>>>>>>> Stashed changes
     </state>
     <state x="144" y="240" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1596679599198" />
     <state x="202" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596642711153" />
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596725222070">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="436" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596725222070" />
     <state x="656" y="260" width="607" height="526" key="find.popup" timestamp="1596504780855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
