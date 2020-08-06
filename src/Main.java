@@ -11,8 +11,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Group group = new CipherGroup<CipherBlock>(Algorithms.ALWAYSADDONE, Algorithms.BASICSTREAM);
-        StreamManager streamManager = new StreamManager(new File("./plaintext.txt"), new File("./encrypted.txt"), group);
+        Group group = new CipherGroup<CipherBlock>(Algorithms.ALWAYSADDONE, Algorithms.BASICSTREAM, Algorithms.BLANKSTREAM);
+        StreamManager streamManager = new StreamManager(new File("./plaintext.txt"), new File("./encrypted.txt"), group, 2048);
         //streamManager.executeGroup();
         streamManager.executeGroup().swap().changeOut(new File("./decrypted.txt")).executeGroup(true);
 

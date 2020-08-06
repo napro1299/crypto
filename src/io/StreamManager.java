@@ -27,10 +27,8 @@ public class StreamManager {
         this(in, out, group);
         if (blockSize <= 0) {
             throw new IllegalArgumentException("Block size <= 0");
-        } else if (blockSize < MAX_BLOCK_SIZE) {
-            throw new IllegalArgumentException("Block size > max size");
-        } else {
-            this.blockSize = blockSize;
+        } else if (blockSize > MAX_BLOCK_SIZE) {
+            throw new IllegalArgumentException("Block size > max");
         }
     }
 
@@ -121,15 +119,6 @@ public class StreamManager {
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             }
-        }
-    }
-
-    private void displayProgress(int pos, int total) {
-        int lengthOfBar = 20;
-        int changeMark = total / lengthOfBar;
-        System.out.println("Progress: ");
-        for (int i = 0; i < lengthOfBar; i++) {
-            System.out.print("█\r");
         }
     }
 

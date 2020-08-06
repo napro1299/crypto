@@ -1,37 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9d13e65-ad3f-44ce-b681-bb5b62113b33" name="Default Changelist" comment="new updates finalized - fixed decryption pipeline error">
-      <change afterPath="$PROJECT_DIR$/.idea/templateLanguages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/decrypted.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crypto/algorithms/AlwaysAddOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crypto/algorithms/BlankBlockCrypto.java" afterDir="false" />
+    <list default="true" id="e23b2ba0-4e1e-453f-bd9e-5e9cb62cac87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VigenereTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dec.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/decrypted.txt" beforeDir="false" afterPath="$PROJECT_DIR$/decrypted.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/encrypted.txt" beforeDir="false" afterPath="$PROJECT_DIR$/encrypted.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/end.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/encryption/META-INF/encryption.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/encryption/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryption/crypto/Algorithms.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/crypto/Algorithms.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryption/crypto/CipherGroup.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/crypto/CipherGroup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryption/crypto/algorithms/BasicBlockCrypto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/crypto/algorithms/BasicBlockCrypto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryption/crypto/algorithms/BasicCrypto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/crypto/algorithms/BasicCrypto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryption/crypto/algorithms/BlankCrypto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryption/crypto/algorithms/MatrixVigenereCrypto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/crypto/algorithms/MatrixVigenereCrypto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryption/crypto/algorithms/VigenereCrypto$Mode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/crypto/algorithms/VigenereCrypto$Mode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/encryption/crypto/algorithms/VigenereCrypto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/crypto/algorithms/VigenereCrypto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/encryption/io/StreamManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/encryption/io/StreamManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plaintext.txt" beforeDir="false" afterPath="$PROJECT_DIR$/plaintext.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crypto/Algorithms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/Algorithms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crypto/CipherBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/CipherBlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crypto/CipherGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/CipherGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crypto/algorithms/BasicBlockCrypto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/algorithms/BasicBlockCrypto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crypto/algorithms/BasicCrypto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/algorithms/BasicCrypto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crypto/algorithms/BlankCrypto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/algorithms/BlankStreamCrypto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crypto/algorithms/MatrixVigenereCrypto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/algorithms/MatrixVigenereCrypto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/crypto/algorithms/VigenereCrypto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/crypto/algorithms/VigenereCrypto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/io/StreamManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/io/StreamManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,13 +55,14 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.VigenereTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="encryption" />
@@ -102,8 +90,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VigenereTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="VigenereTest" />
+      <module name="encryption" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.VigenereTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.StreamsExp" />
@@ -127,7 +123,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a9d13e65-ad3f-44ce-b681-bb5b62113b33" name="Default Changelist" comment="" />
+      <changelist id="e23b2ba0-4e1e-453f-bd9e-5e9cb62cac87" name="Default Changelist" comment="" />
       <created>1592947399324</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -229,21 +225,41 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="526" y="355" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596478551877" />
-    <state width="1877" height="147" key="GridCell.Tab.0.bottom" timestamp="1596663729908">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="125" key="GridCell.Tab.0.bottom" timestamp="1596679553163">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="139" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1596666144296">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="139" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.1366.728@0.0.1366.728" timestamp="1596666144296" />
+    <state width="1323" height="125" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596679553163" />
     <state width="1877" height="147" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596663729908" />
-    <state width="1877" height="147" key="GridCell.Tab.0.center" timestamp="1596663729908">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="125" key="GridCell.Tab.0.center" timestamp="1596679553163">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="139" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1596666144296">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="139" key="GridCell.Tab.0.center.inPresentationMode/0.0.1366.728@0.0.1366.728" timestamp="1596666144296" />
+    <state width="1323" height="125" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596679553163" />
     <state width="1877" height="147" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596663729908" />
-    <state width="1877" height="147" key="GridCell.Tab.0.left" timestamp="1596663729908">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="125" key="GridCell.Tab.0.left" timestamp="1596679553162">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="139" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1596666144295">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="139" key="GridCell.Tab.0.left.inPresentationMode/0.0.1366.728@0.0.1366.728" timestamp="1596666144295" />
+    <state width="1323" height="125" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596679553162" />
     <state width="1877" height="147" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596663729908" />
-    <state width="1877" height="147" key="GridCell.Tab.0.right" timestamp="1596663729908">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1323" height="125" key="GridCell.Tab.0.right" timestamp="1596679553163">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="139" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1596666144296">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="139" key="GridCell.Tab.0.right.inPresentationMode/0.0.1366.728@0.0.1366.728" timestamp="1596666144296" />
+    <state width="1323" height="125" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596679553163" />
     <state width="1877" height="147" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596663729908" />
     <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1596663026866">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -322,9 +338,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596644701786" />
-    <state x="202" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1596642711153">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="144" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1596679599198">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="144" y="240" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1596679599198" />
     <state x="202" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596642711153" />
     <state x="656" y="260" width="607" height="526" key="find.popup" timestamp="1596504780855">
       <screen x="0" y="0" width="1920" height="1040" />
